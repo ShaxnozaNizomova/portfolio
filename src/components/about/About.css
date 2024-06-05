@@ -1,0 +1,58 @@
+.about__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.line{
+    border: 5px solid blue;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.about__text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 25px;
+    text-align: center;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+.skills__title{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills__text{
+    border: 1px solid rgb(233, 232, 232);
+    background-color: rgb(233, 232, 232);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    color: grey;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    width: 200px;
+}
+.skill__items{
+    display: flex;
+    gap: 15px;
+}
