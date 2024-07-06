@@ -1,0 +1,112 @@
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.active {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .navbar__title a {
+    font-weight: 600;
+    font-size: 24px;
+    color: #454545;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar__title a:hover {
+    color: rgb(201, 108, 201);
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar__menu ul.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu__link {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #454545;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu__link:hover {
+    color: rgb(201, 108, 201);
+  }
+  
+  .navbar__toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .toggle__icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #454545;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle__icon.active:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .toggle__icon.active:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .toggle__icon.active:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (max-width: 768px) {
+    .navbar__menu ul {
+      display: none;
+    }
+  
+    .navbar__menu ul.active {
+      display: block;
+    }
+  
+    .navbar__toggle {
+      display: block;
+    }
+  }
+  

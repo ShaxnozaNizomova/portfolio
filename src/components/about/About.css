@@ -2,14 +2,14 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
-    color: #000000;
+    color: #454545;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 30px;
 }
 .line{
-    border: 5px solid blue;
+    border: 5px solid rgb(201, 108, 201);
     width: 50px;
     margin: 0 auto;
     border-radius: 10px;
@@ -18,13 +18,14 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #000000;
+    color: #454545;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 25px;
     text-align: center;
 }
 .skill{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
@@ -55,4 +56,35 @@
 .skill__items{
     display: flex;
     gap: 15px;
+}
+@media screen and (max-width: 500) {
+     .skill{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin: 0 auto;
+       justify-content: center;
+        padding-top: 25px;
+     }
+     .skills__text{
+        border: 1px solid rgb(233, 232, 232);
+        background-color: rgb(233, 232, 232);
+        padding: 8px;
+        text-align: center;
+        border-radius: 10px;
+        color: grey;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 10px;
+        width: 120px;
+    }
+     .about{
+        max-width: 450px;
+        margin: 5px;
+     }
+     .skill__items{
+        display: flex;
+        gap: 7px;
+     }
 }

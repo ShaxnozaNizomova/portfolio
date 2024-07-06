@@ -1,53 +1,99 @@
-.form{
+.contact__form {
+    margin: 30px 0;
+    background-image: url(../../assets//images/back2.jpg);
+    background-size: cover;
+    padding: 80px 0; /* Adjusted padding for smaller screens */
+  }
+  
+  .form {
     display: flex;
-    max-width: 840px;
+    flex-direction: row; /* Stack form elements vertically on smaller screens */
+    max-width: 90%; /* Adjusted max-width for responsiveness */
     margin: 0 auto;
     border: 1px solid white;
     background-color: white;
     border-radius: 15px;
-    justify-content: center;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.contact__form{
-    margin: 30px 0;
-    background-color: lightgray;
-    padding: 100px 0;
-}
-.contact__input{
-    width: 800px;
+    padding: 20px;
+  }
+  
+  .contact__input,
+  .input {
+    width: 100%; /* Make inputs full width */
+    max-width: 800px; /* Limit maximum width of inputs */
     border: 1px solid rgb(233, 232, 232);
     background-color: rgb(233, 232, 232);
     border-radius: 10px;
-    padding: 15px;
+    padding: 12px; /* Reduced padding for smaller screens */
     color: grey;
-    margin: 20px 0;
-    font-size: 20px
-}
-.input{
-    width: 800px;
-    height: 200px;
-    border: 1px solid rgb(233, 232, 232);
-    background-color: rgb(233, 232, 232);
-    padding: 15px;
-    border-radius: 10px;
-    color: grey;
-    margin: 20px 0;
-    font-size: 20px;
-}
-.contact__btn{
-    border: 1px solid blue;
-    background-color: blue;
+    margin: 10px 0; /* Reduced margin for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+  
+  .input {
+    height: 150px; /* Adjusted height for smaller screens */
+  }
+  
+  .contact__btn {
+    border: 1px solid rgb(201, 108, 201);
+    background-color: rgb(201, 108, 201);
     color: #FFFFFF;
-    font-size: 20px;
-    padding: 15px;
-    display: block;
+    font-size: 18px; /* Adjusted font size for smaller screens */
+    padding: 12px; /* Reduced padding for smaller screens */
     border-radius: 10px;
     text-align: center;
-    width: 100px;
-}
-.contact__btn:hover{
-    background-color: #FFFFFF;
-    color: blue;
-}
+    width: 100%; /* Make button full width */
+    max-width: 200px; /* Limit maximum width of button */
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+  }
+  
+  .contact__btn:hover {
+    background-color: white;
+    color: rgb(201, 108, 201);
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (max-width: 1200px) {
+    .form {
+      padding: 15px; /* Further reduced padding for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form {
+      padding: 10px; /* Minimal padding for mobile screens */
+    }
+  
+    .contact__input,
+    .input {
+      font-size: 16px; /* Decreased font size for mobile screens */
+      padding: 10px; /* Reduced padding for mobile screens */
+    }
+  
+    .input {
+      height: 120px; /* Adjusted height for mobile screens */
+    }
+  
+    .contact__btn {
+      font-size: 16px; /* Decreased font size for mobile screens */
+      padding: 10px; /* Reduced padding for mobile screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact__input,
+    .input {
+      font-size: 14px; /* Further decreased font size for smaller mobile screens */
+      padding: 8px; /* Further reduced padding for smaller mobile screens */
+    }
+  
+    .input {
+      height: 100px; /* Further adjusted height for smaller mobile screens */
+    }
+  
+    .contact__btn {
+      font-size: 14px; /* Further decreased font size for smaller mobile screens */
+      padding: 8px; /* Further reduced padding for smaller mobile screens */
+    }
+  }
+  
